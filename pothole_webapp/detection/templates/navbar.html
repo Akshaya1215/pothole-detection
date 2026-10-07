@@ -1,0 +1,42 @@
+<style>
+.navbar {
+    width: 100%;
+    background: #0d0d0d;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    border-bottom: 2px solid #ff6a00;
+}
+
+.navbar a {
+    padding: 12px 30px;
+    background: #3a3a3a;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.navbar a:hover {
+    background: #ff6a00;
+    color: black;
+    transform: scale(1.05);
+    border-color: black;
+}
+
+.navbar .active {
+    background: #ff6a00;
+    color: black;
+    border-color: black;
+}
+</style>
+
+<div class="navbar">
+    <a href="/" class="{% if request.path == '/' %}active{% endif %}">Image Detection</a>
+    <a href="/video/" class="{% if request.path == '/video/' %}active{% endif %}">Video Detection</a>
+    <a href="/webcam/" class="{% if request.path == '/webcam/' %}active{% endif %}">Webcam Detection</a>
+</div>

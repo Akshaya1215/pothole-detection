@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.lib/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+ENV/
+
+# Django local settings/databases
+db.sqlite3
+*.db
+local_settings.py
+pothole_webapp/db.sqlite3
+pothole_project/db.sqlite3
+
+# Roboflow Dataset (Large files, should not be committed to Git)
+train/
+valid/
+test/
+
+# PyTorch/YOLO outputs and temp weights
+yolov8n.pt
+runs/
+video_output/
+video_results/
+uploaded_video.mp4
+pothole_webapp/uploaded_video.mp4
+pothole_webapp/video_results/
+
+# Editor / OS files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
